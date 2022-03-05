@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../src/assets/violin.svg"
+      type="image/x-icon"
+    />
+    <title>IteTheViolinist</title>
+  </head>
+  <body>
+    <!-- Navbar goes here -->
+    <nav class="fixed w-full z-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex space-x-7 justify-between">
+          <div>
+            <!-- Website Logo -->
+            <a href="#" class="flex items-center py-6 px-2">
+              <span class="font-extrabold text-white text-lg"
+                >IteTheViolonist</span
+              >
+            </a>
+          </div>
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="" class="py-4 px-2 text-white font-semibold">Home</a>
+            <a
+              href="#about"
+              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              >About</a
+            >
+            <a
+              href="#media"
+              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              >Media</a
+            >
+            <a
+              href=""
+              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              >Gallery</a
+            >
+            <a
+              href="#booking"
+              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              >Booking</a
+            >
+            <a
+              href="#reviews"
+              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              >Reviews</a
+            >
+            <a
+              href=""
+              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              >YouTube</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-white hover:text-dolphinGray"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu bg-white">
+        <ul class="">
+          <li class="active">
+            <a
+              href="#about"
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary font-semibold"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#media"
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
+              >Media</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#booking"
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
+              >Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
+              >Reviews</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+    <div class="fixed w-full h-full bg-black -z-50">
+      <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube-nocookie.com/embed/NDWbZvDdRZw?controls=0&autoplay=1&mute=1&loop=1&playlist=NDWbZvDdRZw"
+        title="IteTheViolonist"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <div class="h-screen w-full bg-gray-400 bg-opacity-5"></div>
+    <section id="about" class="bg-white p-4 md:p-10">
+      <div
+        class="flex w-full md:w-11/12 m-auto bg-[url(../src/assets/violin.svg)] bg-no-repeat bg-right-bottom [background-size:300px]"
+      >
+        <h2
+          class="[writing-mode:vertical-rl] [text-orientation:mixed] -scale-100 text-center text-dolphinGray font-semibold tracking-widest text-xl z-0"
+        >
+          ABOUT ME
+        </h2>
+        <div class="px-5">
+          <p class="mb-7">
+            Ìtéolúwakìíshí (popularly called “Ite the violinist” or “Ite”) is a
+            multi-genre violinist, multi-instrumentalist, and musician. Ite was
+            born in Lagos, Nigeria to music loving parents who exposed him to
+            genres of popular music at an early age. To further hone his love
+            for music, they rewarded him with his first musical instruments: a
+            guitar and a saxophone, for emerging top of his class.
+          </p>
+
+          <p class="mb-7">
+            Ite specializes in performing for wedding ceremonies and enjoys
+            tailoring his performances to the interests and style of each
+            couple. Whether you desire a close-knit indoor ceremony or a
+            stunning outdoor ceremony with sophisticated multi-genre music,
+            Iteoluwakiishi can play delightful sounds to make your special day
+            even more memorable. Ite is an amazing entertainer who knows how to
+            share the beauty and energy of music with his audience. He stretches
+            the boundaries of the violin with fusions of classical, pop, blues,
+            and jazz in his music.
+          </p>
+
+          <p>
+            As a classically trained violinist who is certified in both
+            theoretical and practical violin from the Associated Board of Royal
+            Schools of Music (ABRSM), Ite has collaborated with several leading
+            wedding planners in Nigeria, including 2706 Events, Oaken Events,
+            MarcuSmith Events, June5ive Events, and TrendyBee Events.
+          </p>
+          <p class="mb-7">
+            His various musical talents have gotten him recruited to play
+            alongside the String Quartets, Violin Concertos and as a soloist
+            with chamber groups. He has also been sought after to lend his
+            skills to several household names like Nathaniel Bassey, Sinach,
+            Lawrence Oyor, Tony Elumelu, Dija, Emma OMG, Naomi Mac (The Voice
+            season 3), Precious Emannuel (The Voice), Abiodun Koya, Kingdom
+            (winner of Nigerian idol), Dapo Pelmar (Nigerian Idol) and Ibk
+            sings.
+          </p>
+
+          <p>
+            With over a hundred thousand views on his YouTube channel and a
+            reputation for providing musical entertainment for all occasions,
+            Ite is one of the most sought-after violinists in Nigeria. Having
+            performed at hundreds of events ranging from weddings to
+            coronations, anniversaries, church concerts, and state house
+            ceremonies, he has the needed expertise for every event.
+          </p>
+          <a href="" class="font-semibold text-lg text-primary mt-8 block"
+            >Visit Gallery</a
+          >
+        </div>
+      </div>
+    </section>
+    <section
+      id="media"
+      class="media bg-[url(../src/assets/media-lines.svg)] bg-cover bg-no-repeat bg-center p-6 bg-white"
+    >
+      <h2
+        class="text-primary text-center font-bold text-xl mb-6 tracking-widest"
+      >
+        MEDIA
+      </h2>
+      <div class="flex flex-col items-center">
+        <iframe
+          class="mb-8 w-11/12 md:w-128"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/1z-VDJHDNBM"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="mb-8 w-11/12 md:w-128"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/3fB75i_IhxA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="mb-8 w-11/12 md:w-128"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/J6QyCD-sEUI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <!-- <div class="mb-8 w-11/12 md:w-128 bg-black h-80"></div>
+        <div class="mb-8 w-11/12 md:w-128 bg-black h-80"></div>
+        <div class="mb-8 w-11/12 md:w-128 bg-black h-80"></div> -->
+      </div>
+      <button
+        class="bg-primary py-3 px-9 m-auto block rounded text-white font-roboto"
+      >
+        View more on YouTube
+      </button>
+    </section>
+    <section id="booking" class="booking bg-white p-2 md:p-10">
+      <div class="shadow-md w-11/12 md:w-4/5 m-auto rounded-md p-1 md:p-8">
+        <h2
+          class="text-primary text-center font-bold text-xl mb-6 tracking-widest"
+        >
+          BOOKINGS
+        </h2>
+        <form action="">
+          <div class="flex flex-col md:flex-row mb-8">
+            <div class="w-full md:w-2/4 p-3">
+              <label for="name" class="text-dolphinGray"
+                >Full Name/ Organisation</label
+              >
+              <input
+                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
+                id="name"
+                type="text"
+              />
+            </div>
+            <div class="w-full md:w-2/4 p-3">
+              <label for="name" class="text-dolphinGray">Email</label>
+              <input
+                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
+                id="email"
+                type="email"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row mb-8">
+            <div class="w-full md:w-2/4 p-3">
+              <label for="type" class="text-dolphinGray">Event Type</label>
+              <select
+                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
+                name="type"
+                id="type"
+              >
+                <option value="wedding">Wedding</option>
+                <option value="type1">Type 1</option>
+                <option value="type2">Type 2</option>
+              </select>
+            </div>
+            <div class="w-full md:w-2/4 p-3">
+              <label for="location" class="text-dolphinGray"
+                >Location of Event</label
+              >
+              <input
+                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
+                id="location"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row mb-8">
+            <div class="w-full md:w-2/4 p-3">
+              <label for="date" class="text-dolphinGray">Date of Event</label>
+              <input
+                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
+                id="date"
+                type="date"
+              />
+            </div>
+            <div class="w-full md:w-2/4 p-3">
+              <label for="duration" class="text-dolphinGray">Duration</label>
+              <input
+                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
+                id="duration"
+                type="text"
+              />
+            </div>
+          </div>
+          <button
+            class="bg-primary py-3 px-9 m-auto block rounded text-white font-nunito font-extrabold"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script>
+    const nav = document.querySelector("nav");
+
+    window.onscroll = () => {
+      if (window.pageYOffset >= 180) {
+        nav.classList.add("bg-primary", "shadown-md");
+      } else {
+        nav.classList.remove("bg-primary");
+      }
+    };
+  </script>
+</html>
