@@ -12,49 +12,28 @@
     <title>IteTheViolinist</title>
   </head>
   <body>
-    <!-- Navbar goes here -->
+    <div id="home"></div>
     <nav class="fixed w-full z-50">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex space-x-7 justify-between">
           <div>
-            <!-- Website Logo -->
-            <a href="#" class="flex items-center py-6 px-2">
+            <a href="#home" class="flex items-center py-6 px-2">
               <span class="font-extrabold text-white text-lg"
-                >IteTheViolonist</span
+                >IteTheViolinist</span
               >
             </a>
           </div>
-          <!-- Primary Navbar items -->
           <div class="hidden md:flex items-center space-x-1">
-            <a href="" class="py-4 px-2 text-white font-semibold">Home</a>
+            <a href="#home" class="py-4 px-2 text-white font-semibold">Home</a>
+            <a href="#about" class="nav-links">About</a>
+            <a href="#media" class="nav-links">Media</a>
+            <a href="./gallery/" class="nav-links">Gallery</a>
+            <a href="#booking" class="nav-links">Booking</a>
+            <a href="#reviews" class="nav-links">Reviews</a>
             <a
-              href="#about"
-              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
-              >About</a
-            >
-            <a
-              href="#media"
-              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
-              >Media</a
-            >
-            <a
-              href=""
-              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
-              >Gallery</a
-            >
-            <a
-              href="#booking"
-              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
-              >Booking</a
-            >
-            <a
-              href="#reviews"
-              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
-              >Reviews</a
-            >
-            <a
-              href=""
-              class="py-4 px-2 text-white font-semibold hover:text-primary transition duration-300"
+              href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+              target="_blank"
+              class="nav-links"
               >YouTube</a
             >
           </div>
@@ -80,44 +59,25 @@
       <div class="hidden mobile-menu bg-white">
         <ul class="">
           <li class="active">
-            <a
-              href="#about"
-              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary font-semibold"
-              >About</a
-            >
+            <a href="#about" class="mobile-nav-links">About</a>
+          </li>
+          <li>
+            <a href="#media" class="mobile-nav-links">Media</a>
+          </li>
+          <li>
+            <a href="./gallery/" class="mobile-nav-links">Gallery</a>
+          </li>
+          <li>
+            <a href="#booking" class="mobile-nav-links">Booking</a>
+          </li>
+          <li>
+            <a href="#reviews" class="mobile-nav-links">Reviews</a>
           </li>
           <li>
             <a
-              href="#media"
-              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
-              >Media</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
-              >Gallery</a
-            >
-          </li>
-          <li>
-            <a
-              href="#booking"
-              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
-              >Booking</a
-            >
-          </li>
-          <li>
-            <a
-              href="#reviews"
-              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
-              >Reviews</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              class="block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300"
+              href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+              target="_blank"
+              class="mobile-nav-links"
               >YouTube</a
             >
           </li>
@@ -132,7 +92,7 @@
         });
       </script>
     </nav>
-    <div class="fixed w-full h-full bg-black -z-50">
+    <div class="fixed w-full h-full -z-50 bg-white">
       <iframe
         width="100%"
         height="100%"
@@ -146,16 +106,25 @@
     </div>
 
     <div class="h-screen w-full bg-gray-400 bg-opacity-5"></div>
-    <section id="about" class="bg-white p-4 md:p-10">
+    <section id="about" class="p-4 md:p-10 bg-white">
+      <h2 class="section-titles">ITE THE VIOLINIST</h2>
+      <div
+        class="bg-[url(../src/assets/media-lines.svg)] md:bg-[url(../src/assets/review-lines.svg)] w-full max-w-5xl bg-no-repeat bg-contain bg-center mx-auto flex flex-wrap md:flex-row items-center justify-center py-10"
+      >
+        <img class="about-image" src="./assets/gallery/1.png" alt="Ite" />
+        <img class="about-image" src="./assets/gallery/2.png" alt="Ite" />
+        <img class="about-image" src="./assets/gallery/3.png" alt="Ite" />
+        <img class="about-image" src="./assets/gallery/1.png" alt="Ite" />
+      </div>
       <div
         class="flex w-full md:w-11/12 m-auto bg-[url(../src/assets/violin.svg)] bg-no-repeat bg-right-bottom [background-size:300px]"
       >
         <h2
-          class="[writing-mode:vertical-rl] [text-orientation:mixed] -scale-100 text-center text-dolphinGray font-semibold tracking-widest text-xl z-0"
+          class="[writing-mode:vertical-rl] [text-orientation:mixed] -scale-100 text-center text-dolphinGray/40 font-semibold tracking-widest text-xl z-0"
         >
           ABOUT ME
         </h2>
-        <div class="px-5">
+        <div class="px-3">
           <p class="mb-7">
             Ìtéolúwakìíshí (popularly called “Ite the violinist” or “Ite”) is a
             multi-genre violinist, multi-instrumentalist, and musician. Ite was
@@ -203,7 +172,9 @@
             coronations, anniversaries, church concerts, and state house
             ceremonies, he has the needed expertise for every event.
           </p>
-          <a href="" class="font-semibold text-lg text-primary mt-8 block"
+          <a
+            href="./gallery/"
+            class="font-semibold text-lg text-primary mt-8 block"
             >Visit Gallery</a
           >
         </div>
@@ -213,14 +184,10 @@
       id="media"
       class="media bg-[url(../src/assets/media-lines.svg)] bg-cover bg-no-repeat bg-center p-6 bg-white"
     >
-      <h2
-        class="text-primary text-center font-bold text-xl mb-6 tracking-widest"
-      >
-        MEDIA
-      </h2>
+      <h2 class="section-titles">MEDIA</h2>
       <div class="flex flex-col items-center">
-        <iframe
-          class="mb-8 w-11/12 md:w-128"
+        <!-- <iframe
+          class="media-frames"
           height="315"
           src="https://www.youtube-nocookie.com/embed/1z-VDJHDNBM"
           title="YouTube video player"
@@ -229,7 +196,7 @@
           allowfullscreen
         ></iframe>
         <iframe
-          class="mb-8 w-11/12 md:w-128"
+          class="media-frames"
           height="315"
           src="https://www.youtube-nocookie.com/embed/3fB75i_IhxA"
           title="YouTube video player"
@@ -238,17 +205,17 @@
           allowfullscreen
         ></iframe>
         <iframe
-          class="mb-8 w-11/12 md:w-128"
+          class="media-frames"
           height="315"
           src="https://www.youtube-nocookie.com/embed/J6QyCD-sEUI"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
-        <!-- <div class="mb-8 w-11/12 md:w-128 bg-black h-80"></div>
-        <div class="mb-8 w-11/12 md:w-128 bg-black h-80"></div>
-        <div class="mb-8 w-11/12 md:w-128 bg-black h-80"></div> -->
+        ></iframe> -->
+        <div class="media-frames bg-black h-80"></div>
+        <div class="media-frames bg-black h-80"></div>
+        <div class="media-frames bg-black h-80"></div>
       </div>
       <button
         class="bg-primary py-3 px-9 m-auto block rounded text-white font-roboto"
@@ -256,74 +223,51 @@
         View more on YouTube
       </button>
     </section>
+
     <section id="booking" class="booking bg-white p-2 md:p-10">
-      <div class="shadow-md w-11/12 md:w-4/5 m-auto rounded-md p-1 md:p-8">
-        <h2
-          class="text-primary text-center font-bold text-xl mb-6 tracking-widest"
-        >
-          BOOKINGS
-        </h2>
+      <div
+        class="shadow-md w-11/12 md:w-4/5 m-auto rounded-md p-1 md:p-8 bg-gray-400 bg-opacity-5"
+      >
+        <h2 class="section-titles">BOOKINGS</h2>
         <form action="">
-          <div class="flex flex-col md:flex-row mb-8">
-            <div class="w-full md:w-2/4 p-3">
+          <div class="form-group">
+            <div class="input-container">
               <label for="name" class="text-dolphinGray"
                 >Full Name/ Organisation</label
               >
-              <input
-                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
-                id="name"
-                type="text"
-              />
+              <input class="booking-inputs" id="name" type="text" />
             </div>
-            <div class="w-full md:w-2/4 p-3">
+            <div class="input-container">
               <label for="name" class="text-dolphinGray">Email</label>
-              <input
-                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
-                id="email"
-                type="email"
-              />
+              <input class="booking-inputs" id="email" type="email" />
             </div>
           </div>
-          <div class="flex flex-col md:flex-row mb-8">
-            <div class="w-full md:w-2/4 p-3">
+          <div class="form-group">
+            <div class="input-container">
               <label for="type" class="text-dolphinGray">Event Type</label>
-              <select
-                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
-                name="type"
-                id="type"
-              >
+              <select class="booking-inputs" name="type" id="type">
                 <option value="wedding">Wedding</option>
-                <option value="type1">Type 1</option>
-                <option value="type2">Type 2</option>
+                <option value="corp">Corporate Event</option>
+                <option value="gala">Gala</option>
+                <option value="book">Book Launch</option>
+                <option value="other">Others</option>
               </select>
             </div>
-            <div class="w-full md:w-2/4 p-3">
+            <div class="input-container">
               <label for="location" class="text-dolphinGray"
                 >Location of Event</label
               >
-              <input
-                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
-                id="location"
-                type="text"
-              />
+              <input class="booking-inputs" id="location" type="text" />
             </div>
           </div>
-          <div class="flex flex-col md:flex-row mb-8">
-            <div class="w-full md:w-2/4 p-3">
+          <div class="form-group">
+            <div class="input-container">
               <label for="date" class="text-dolphinGray">Date of Event</label>
-              <input
-                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
-                id="date"
-                type="date"
-              />
+              <input class="booking-inputs" id="date" type="date" />
             </div>
-            <div class="w-full md:w-2/4 p-3">
+            <div class="input-container">
               <label for="duration" class="text-dolphinGray">Duration</label>
-              <input
-                class="border border-dolphinGray rounded-md block w-full p-2 mt-2"
-                id="duration"
-                type="text"
-              />
+              <input class="booking-inputs" id="duration" type="text" />
             </div>
           </div>
           <button
@@ -334,6 +278,118 @@
         </form>
       </div>
     </section>
+    <section class="pt-10 bg-white">
+      <h2 class="section-titles">REVIEWS</h2>
+      <div
+        class="bg-[url(../src/assets/media-lines.svg)] md:bg-[url(../src/assets/review-lines.svg)] w-full max-w-5xl bg-no-repeat bg-contain mx-auto bg-center flex flex-col md:flex-row items-center justify-between py-10"
+      >
+        <div class="review">
+          <p class="review-text">
+            <span class="quote">“</span>
+            I love the confidence with which you play, keep it up!
+            <span class="quote">”</span>
+          </p>
+          <p class="font-semibold">Tony Elumelu</p>
+          <p class="reviewer-title">Chairman, United Bank for Africa</p>
+        </div>
+        <div class="review mt-10">
+          <p class="review-text">
+            <span class="quote">“</span>
+            I love what you do with your violin, I didn’t know the violin could
+            do that, Thank you for your time.
+            <span class="quote">”</span>
+          </p>
+          <p class="font-semibold">Chief Michael Ade-Ojo</p>
+          <p class="reviewer-title">Chairman and CEO Elizade motors limited</p>
+        </div>
+        <div class="review mt-20">
+          <p class="review-text">
+            <span class="quote">“</span>
+            Ite is a very talented player, he made my wedding more memorable. my
+            wife and I got serenaded
+            <span class="quote">”</span>
+          </p>
+          <p class="font-semibold">Mr & Mrs Clinton Peters</p>
+          <p class="reviewer-title">Couple</p>
+        </div>
+      </div>
+    </section>
+    <div class="bg-white">
+      <div class="translate-y-1/4">
+        <img
+          src="./assets/thank-you.png"
+          alt="Thank You"
+          class="w-2/4 sm:w-96 mx-auto translate-y-2/4 -z-10"
+        />
+        <div
+          class="banner w-11/12 sm:w-3/4 mx-auto shadow-lg p-7 bg-white rounded-lg mb-0 h-auto text-center z-10 translate-y-0"
+        >
+          <p class="text-2xl font-semibold mb-3">
+            Would you like to support IteTheViolinst?
+          </p>
+          <p class="mb-3">
+            If you would like to support, please donate and/or subscribe to my
+            YouTube channel
+          </p>
+          <div>
+            <a href="#"
+              ><button
+                class="bg-primary text-white font-bold px-7 py-3 rounded-md mr-3 mt-2"
+              >
+                PayPal
+              </button></a
+            >
+
+            <a
+              href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+              target="_blank"
+              ><button
+                class="border border-primary font-bold px-7 py-3 rounded-md text-primary mt-2"
+              >
+                Subscribe
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary pt-28 pb-16">
+      <div
+        class="flex justify-between text-white text-sm w-full sm:w-3/5 m-auto mt-16 p-2"
+      >
+        <a href="#home">HOME</a>
+        <a class="ml-0" href="#about">ABOUT</a>
+        <a class="ml-0" href="#">SUPPORT</a>
+        <a class="ml-0" href="#media">MEDIA</a>
+        <a class="ml-0" href="#booking">BOOKING</a>
+      </div>
+      <div class="socials flex justify-center mt-10">
+        <a
+          href="https://www.facebook.com/Ite-the-violinist-865467870287587"
+          target="_blank"
+        >
+          <img src="./assets/fb.svg" alt="Facebook" />
+        </a>
+        <a
+          class="ml-5"
+          href="https://www.instagram.com/itetheviolinist/"
+          target="_blank"
+        >
+          <img src="./assets/ig.svg" alt="Instagram" />
+        </a>
+        <a
+          class="ml-5"
+          href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+          target="_blank"
+        >
+          <img src="./assets/yt.svg" alt="YouTube" />
+        </a>
+        <a class="ml-5" href="https://twitter.com/theijebuguy" target="_blank">
+          <img src="./assets/twitter.svg" alt="Twitter" />
+        </a>
+      </div>
+    </footer>
   </body>
   <script>
     const nav = document.querySelector("nav");

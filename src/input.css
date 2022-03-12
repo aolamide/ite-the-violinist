@@ -10,3 +10,48 @@
     font-family: "Nunito", system-ui, sans-serif;
   }
 }
+
+@layer components {
+  .section-titles {
+    @apply text-primary text-center font-bold text-xl mb-6 tracking-widest mt-5;
+  }
+  .nav-links {
+    @apply py-4 px-2 text-white font-semibold hover:text-gray-300 transition duration-300;
+  }
+  .mobile-nav-links {
+    @apply block text-sm px-2 py-4 hover:text-white hover:bg-primary transition duration-300;
+  }
+  .about-image {
+    @apply w-[46.67%] sm:w-60 m-1;
+  }
+  .about-image:nth-child(even) {
+    @apply lg:mt-8;
+  }
+  .media-frames {
+    @apply mb-8 w-11/12 md:w-128;
+  }
+  .booking-inputs {
+    @apply border border-dolphinGray rounded-md block w-full p-2 mt-2;
+  }
+  .form-group {
+    @apply flex flex-col md:flex-row mb-8;
+  }
+  .input-container {
+    @apply w-full md:w-2/4 p-3;
+  }
+  .review {
+    @apply shadow-xl w-80 bg-white p-5 rounded-tr-2xl rounded-br-2xl h-60 border border-dolphinGray/20;
+  }
+  .review-text {
+    @apply text-lg mb-6;
+  }
+  .reviewer-title {
+    @apply text-primary text-sm font-serif;
+  }
+  .quote {
+    @apply text-dolphinGray font-extrabold;
+  }
+  .quote:first-child {
+    @apply inline-block -translate-y-4;
+  }
+}
