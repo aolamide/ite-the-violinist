@@ -13,7 +13,7 @@
 
 @layer components {
   .section-titles {
-    @apply text-primary text-center font-bold text-xl mb-6 tracking-widest mt-5;
+    @apply text-primary text-center font-bold text-xl mb-10 tracking-widest mt-5;
   }
   .nav-links {
     @apply py-4 px-2 text-white font-semibold hover:text-gray-300 transition duration-300;
