@@ -40,7 +40,7 @@
     @apply w-full md:w-2/4 p-3;
   }
   .review {
-    @apply shadow-xl w-80 bg-white p-5 rounded-tr-2xl rounded-br-2xl h-60 border border-dolphinGray/20;
+    @apply shadow-xl w-80 bg-white p-5 rounded-tr-2xl rounded-br-2xl h-60 border border-dolphinGray/20 flex flex-col justify-center;
   }
   .review-text {
     @apply text-lg mb-6;
