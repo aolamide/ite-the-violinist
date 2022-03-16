@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../dist/output.css" />
+    <link rel="shortcut icon" href="../assets/violin.svg" type="image/x-icon" />
+    <title>IteTheViolinist | Gallery</title>
+    <style>
+      .twos {
+        width: calc(50% - 5px);
+      }
+      .threes {
+        width: calc(33.33% - 6.67px);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="fixed w-full z-50 bg-primary shadow-md">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex space-x-7 justify-between">
+          <div>
+            <a href="../index.html" class="flex items-center py-6 px-2">
+              <span class="font-extrabold text-white text-lg"
+                >IteTheViolinist</span
+              >
+            </a>
+          </div>
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="../index.html" class="py-4 px-2 text-white font-semibold"
+              >Home</a
+            >
+            <a href="../index.html#about" class="nav-links">About</a>
+            <a href="../index.html#media" class="nav-links">Media</a>
+            <a href="#" class="nav-links font-extrabold">Gallery</a>
+            <a href="../index.html#booking" class="nav-links">Booking</a>
+            <a href="../index.html#reviews" class="nav-links">Reviews</a>
+            <a
+              href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+              target="_blank"
+              class="nav-links"
+              >YouTube</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6 text-white hover:text-dolphinGray"
+                x-show="!showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="hidden mobile-menu bg-white">
+        <ul class="">
+          <li class="active">
+            <a href="../index.html#about" class="mobile-nav-links">About</a>
+          </li>
+          <li>
+            <a href="../index.html#media" class="mobile-nav-links">Media</a>
+          </li>
+          <li>
+            <a href="#" class="mobile-nav-links font-bold">Gallery</a>
+          </li>
+          <li>
+            <a href="../index.html#booking" class="mobile-nav-links">Booking</a>
+          </li>
+          <li>
+            <a href="../index.html#reviews" class="mobile-nav-links">Reviews</a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+              target="_blank"
+              class="mobile-nav-links"
+              >YouTube</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+    </nav>
+    <div class="container mx-auto pt-20">
+      <div class="flex justify-between m-5">
+        <img src="../assets/gallery/1.png" class="threes" alt="Ite" />
+        <img src="../assets/gallery/6.jpg" class="threes" alt="" /><img
+          src="../assets/gallery/3.png"
+          class="threes"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-between m-5">
+        <img src="../assets/gallery/4.JPG" class="twos" alt="Ite" />
+        <img src="../assets/gallery/7.JPG" class="twos" alt="Ite" />
+      </div>
+      <div class="flex justify-between m-5">
+        <img src="../assets/gallery/5.jpg" class="threes" alt="Ite" />
+        <img src="../assets/gallery/2.png" class="threes" alt="Ite" /><img
+          src="../assets/gallery/8.jpg"
+          class="threes"
+          alt=""
+        />
+      </div>
+      <div class="flex justify-between m-5">
+        <img
+          src="../assets/gallery/11.JPG"
+          class="twos"
+          alt="IteTheViolinist"
+        />
+        <img
+          src="../assets/gallery/12.JPG"
+          class="twos"
+          alt="IteTheViolinist"
+        />
+      </div>
+      <div class="flex justify-between m-5">
+        <img
+          src="../assets/gallery/10.jpg"
+          class="twos"
+          alt="IteTheViolinist"
+        />
+        <div class="flex flex-col justify-between twos">
+          <img
+            src="../assets/gallery/12.JPG"
+            class=""
+            alt="IteTheViolinist"
+          /><img src="../assets/gallery/14.JPG" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="bg-white">
+      <div class="translate-y-1/4">
+        <img
+          src="../assets/thank-you.png"
+          alt="Thank You"
+          class="w-2/4 sm:w-96 mx-auto translate-y-2/4 -z-10"
+        />
+        <div
+          class="banner w-11/12 sm:w-3/4 mx-auto shadow-lg p-7 bg-white rounded-lg mb-0 h-auto text-center z-10 translate-y-0"
+        >
+          <p class="text-2xl font-semibold mb-3">
+            Would you like to support IteTheViolinst?
+          </p>
+          <p class="mb-3">
+            If you would like to support, please donate and/or subscribe to my
+            YouTube channel
+          </p>
+          <div>
+            <a href="#"
+              ><button
+                class="bg-primary text-white font-bold px-7 py-3 rounded-md mr-3 mt-2"
+              >
+                PayPal
+              </button></a
+            >
+
+            <a
+              href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+              target="_blank"
+              ><button
+                class="border border-primary font-bold px-7 py-3 rounded-md text-primary mt-2"
+              >
+                Subscribe
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary pt-28 pb-16">
+      <div
+        class="flex justify-between text-white text-sm w-full sm:w-3/5 m-auto mt-16 p-2"
+      >
+        <a href="#home">HOME</a>
+        <a class="ml-0" href="../index.html#about">ABOUT</a>
+        <a class="ml-0" href="#">SUPPORT</a>
+        <a class="ml-0" href="../index.html#media">MEDIA</a>
+        <a class="ml-0" href="../index.html#booking">BOOKING</a>
+      </div>
+      <div class="socials flex justify-center mt-10">
+        <a
+          href="https://www.facebook.com/Ite-the-violinist-865467870287587"
+          target="_blank"
+        >
+          <img src="../assets/fb.svg" alt="Facebook" />
+        </a>
+        <a
+          class="ml-5"
+          href="https://www.instagram.com/itetheviolinist/"
+          target="_blank"
+        >
+          <img src="../assets/ig.svg" alt="Instagram" />
+        </a>
+        <a
+          class="ml-5"
+          href="https://www.youtube.com/c/IteoluwakiishiAdesanya/featured"
+          target="_blank"
+        >
+          <img src="../assets/yt.svg" alt="YouTube" />
+        </a>
+        <a class="ml-5" href="https://twitter.com/theijebuguy" target="_blank">
+          <img src="../assets/twitter.svg" alt="Twitter" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
