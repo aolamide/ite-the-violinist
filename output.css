@@ -707,6 +707,10 @@ html {
   margin-right: auto;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mb-7{
   margin-bottom: 1.75rem;
 }
@@ -749,10 +753,6 @@ html {
 
 .ml-5{
   margin-left: 1.25rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
 }
 
 .block{
@@ -823,12 +823,6 @@ html {
 
 .translate-y-0{
   --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-scale-100{
-  --tw-scale-x: -1;
-  --tw-scale-y: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -917,8 +911,12 @@ html {
   background-image: url(../src/assets/media-lines.svg);
 }
 
-.bg-\[url\(\.\.\/src\/assets\/violin\.svg\)\]{
-  background-image: url(../src/assets/violin.svg);
+.bg-\[url\(\.\/assets\/violin\.svg\)\]{
+  background-image: url(./assets/violin.svg);
+}
+
+.bg-\[url\(\.\/assets\/media-lines\.svg\)\]{
+  background-image: url(./assets/media-lines.svg);
 }
 
 .bg-contain{
@@ -1016,8 +1014,8 @@ html {
   padding-top: 2.5rem;
 }
 
-.pt-28{
-  padding-top: 7rem;
+.pt-16{
+  padding-top: 4rem;
 }
 
 .pb-16{
@@ -1026,10 +1024,6 @@ html {
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .text-center{
@@ -1057,11 +1051,6 @@ html {
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .text-xs{
@@ -1125,16 +1114,6 @@ html {
   background-size: 300px;
 }
 
-.\[writing-mode\:vertical-rl\]{
-  -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
-}
-
-.\[text-orientation\:mixed\]{
-  -webkit-text-orientation: mixed;
-          text-orientation: mixed;
-}
-
 .hover\:text-dolphinGray:hover{
   --tw-text-opacity: 1;
   color: rgb(135 153 136 / var(--tw-text-opacity));
@@ -1187,6 +1166,10 @@ html {
 
   .md\:bg-\[url\(\.\.\/src\/assets\/review-lines\.svg\)\]{
     background-image: url(../src/assets/review-lines.svg);
+  }
+
+  .md\:bg-\[url\(\.\/assets\/review-lines\.svg\)\]{
+    background-image: url(./assets/review-lines.svg);
   }
 
   .md\:p-10{
