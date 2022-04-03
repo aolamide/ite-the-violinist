@@ -207,7 +207,7 @@ multi-genre violinist, multi-instrumentalist, and musician."
     </section>
     <section
       id="media"
-      class="media bg-[url(../src/assets/media-lines.svg)] bg-cover bg-no-repeat bg-center p-6 bg-white"
+      class="media bg-[url(./assets/media-lines.svg)] bg-cover bg-no-repeat bg-center p-6 bg-white"
     >
       <h2 class="section-titles">MEDIA</h2>
       <div class="flex flex-col items-center">
@@ -258,52 +258,71 @@ multi-genre violinist, multi-instrumentalist, and musician."
         class="shadow-md w-11/12 md:w-4/5 m-auto rounded-md py-8 px-1 md:px-8 bg-gray-400 bg-opacity-5"
       >
         <h2 class="section-titles">BOOKINGS</h2>
-        <form action="">
+        <form>
           <div class="form-group">
             <div class="input-container">
               <label for="name" class="text-dolphinGray"
                 >Full Name/ Organisation</label
               >
-              <input class="booking-inputs" id="name" type="text" />
+              <input class="booking-inputs" id="name" type="text" required />
             </div>
             <div class="input-container">
               <label for="name" class="text-dolphinGray">Email</label>
-              <input class="booking-inputs" id="email" type="email" />
+              <input class="booking-inputs" id="email" type="email" required />
             </div>
           </div>
           <div class="form-group">
             <div class="input-container">
               <label for="type" class="text-dolphinGray">Event Type</label>
-              <select class="booking-inputs" name="type" id="type">
+              <select class="booking-inputs" name="type" id="type" required>
                 <option value="wedding">Wedding</option>
-                <option value="corp">Corporate Event</option>
+                <option value="corporate event">Corporate Event</option>
                 <option value="gala">Gala</option>
-                <option value="book">Book Launch</option>
-                <option value="other">Others</option>
+                <option value="book launch">Book Launch</option>
+                <option value="others">Others</option>
               </select>
             </div>
             <div class="input-container">
               <label for="location" class="text-dolphinGray"
                 >Location of Event</label
               >
-              <input class="booking-inputs" id="location" type="text" />
+              <input
+                class="booking-inputs"
+                id="location"
+                type="text"
+                required
+              />
             </div>
           </div>
           <div class="form-group">
             <div class="input-container">
               <label for="date" class="text-dolphinGray">Date of Event</label>
-              <input class="booking-inputs" id="date" type="date" />
+              <input class="booking-inputs" id="date" type="date" required />
             </div>
             <div class="input-container">
               <label for="duration" class="text-dolphinGray">Duration</label>
-              <input class="booking-inputs" id="duration" type="text" />
+              <input
+                class="booking-inputs"
+                id="duration"
+                type="text"
+                required
+              />
             </div>
           </div>
+          <p
+            class="text-red-500 font-bold text-center mb-2"
+            id="booking-error"
+          ></p>
           <button
+            id="btn-submit"
             class="bg-primary py-3 px-9 m-auto block rounded text-white font-nunito font-extrabold"
           >
             Send
           </button>
+          <p
+            class="text-green-800 font-bold text-center mt-2"
+            id="booking-success"
+          ></p>
         </form>
       </div>
     </section>
@@ -431,4 +450,5 @@ multi-genre violinist, multi-instrumentalist, and musician."
       }
     };
   </script>
+  <script src="booking.js"></script>
 </html>
