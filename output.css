@@ -674,6 +674,10 @@ html {
   position: fixed;
 }
 
+.relative{
+  position: relative;
+}
+
 .z-50{
   z-index: 50;
 }
@@ -791,6 +795,12 @@ html {
   height: auto;
 }
 
+.h-fit{
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-full{
   width: 100%;
 }
@@ -805,6 +815,10 @@ html {
 
 .w-2\/4{
   width: 50%;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .max-w-6xl{
@@ -1036,6 +1050,14 @@ html {
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pb-\[52\.5\%\]{
+  padding-bottom: 52.5%;
+}
+
+.pb-\[56\.25\%\]{
+  padding-bottom: 56.25%;
 }
 
 .text-center{
