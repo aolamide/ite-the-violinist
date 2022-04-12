@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -566,6 +566,7 @@ html {
 
 .about-image{
   margin: 0.25rem;
+  height: auto;
   width: 46.67%;
 }
 
@@ -674,10 +675,6 @@ html {
   position: fixed;
 }
 
-.relative{
-  position: relative;
-}
-
 .z-50{
   z-index: 50;
 }
@@ -723,6 +720,14 @@ html {
   margin-top: 2rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -743,10 +748,6 @@ html {
   margin-right: 0.75rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
-}
-
 .mt-16{
   margin-top: 4rem;
 }
@@ -757,10 +758,6 @@ html {
 
 .ml-5{
   margin-left: 1.25rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -795,12 +792,6 @@ html {
   height: auto;
 }
 
-.h-fit{
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .w-full{
   width: 100%;
 }
@@ -815,10 +806,6 @@ html {
 
 .w-2\/4{
   width: 50%;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .max-w-6xl{
@@ -933,18 +920,6 @@ html {
   background-image: url(./assets/violin.svg);
 }
 
-.bg-\[url\(\.\.\/src\/assets\/media-lines\.svg\)\]{
-  background-image: url(../src/assets/media-lines.svg);
-}
-
-.bg-\[url\(\.\/assets\/violin\.png\)\]{
-  background-image: url(./assets/violin.png);
-}
-
-.bg-\[url\(\.\.\/assets\/media-lines\.svg\)\]{
-  background-image: url(../assets/media-lines.svg);
-}
-
 .bg-contain{
   background-size: contain;
 }
@@ -1052,14 +1027,6 @@ html {
   padding-top: 5rem;
 }
 
-.pb-\[52\.5\%\]{
-  padding-bottom: 52.5%;
-}
-
-.pb-\[56\.25\%\]{
-  padding-bottom: 56.25%;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1090,11 +1057,6 @@ html {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-extrabold{
@@ -1135,11 +1097,6 @@ html {
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.text-green-500{
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
 .text-green-800{
@@ -1246,7 +1203,6 @@ html {
   }
 
   .md\:\[text-orientation\:mixed\]{
-    -webkit-text-orientation: mixed;
-            text-orientation: mixed;
+    text-orientation: mixed;
   }
 }
